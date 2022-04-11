@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: queens Trial;
+    src: url("../public/fonts/._QueensTrial-Regular.ttf") format(ttf);
+  }
+
+  @font-face {
+    font-family: Graphik;
+    font-weight: 100;
+    src: url("../public/fonts/GraphikExtralight.otf") format(otf);
+  }
+
+  @font-face {
+    font-family: graphik thin;
+    font-weight: 100;
+    src: url("../public/fonts/GraphikThin.otf") format(otf);
+  }
+
+  body {
+    @apply bg-[#121921] text-[#E9F1F4] select-none;
+  }
+
+  .section_title {
+    @apply text-lg font-Graphiklight  font-light text-center my-16 uppercase tracking-widest;
+  }
+  .overlays {
+    @apply w-full h-1/3 bg-gradient-to-b from-transparent to-[#121921] absolute bottom-0;
+  }
+
+  .profileImage {
+    @apply md:w-[50%] sm:w-[470px] absolute top-0 right-0   md:bottom-0 md:right-0 -z-10 sm:h-[100%]  h-[60vh] w-[370px];
+  }
+
+  .service_para {
+    @apply text-[4vw] sm:text-[3vw] leading-normal sm:leading-tight font-Graphiklight font-thin;
+  }
+
+  .project_name {
+    @apply z-[-1] font-queensTrial font-extralight text-[15.5vw] tracking-tighter  leading-[0.8];
+  }
+
+  .input {
+    @apply w-full mb-6 font-Graphiklight font-thin text-lg md:text-2xl py-2 md:py-3 pl-4 bg-transparent border-[0.2px] border-[#E9F1F4] border-opacity-40;
+  }
+
+  .project_info_para {
+    @apply text-lg md:text-2xl font-Graphiklight font-thin mb-1 opacity-75;
+  }
+}
